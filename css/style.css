@@ -1,0 +1,113 @@
+body {
+	/*background-color: rgb(31, 194, 226);*/
+	background-image: url(../images/bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+	background-attachment: fixed;
+	font-family: Helvetica, Arial, sans-serif;
+
+
+}
+
+.main {
+	/* makes main element tranparent */
+	background-color: rgba(255,255,255,0.7);
+	/*box-shadow: 10px 10px 10px 10px grey;*/
+	/* putting it in a box in page centre */
+	max-width: 600px;
+	margin: 0 auto; 
+	padding: 20px;
+	border-radius: 25px;
+}
+
+
+h1 {
+	text-align: center;
+	font-size: 50px;
+	/* Added Google font 2nd box links to one in head*/
+	font-family: 'Baloo Thambi', cursive;
+
+}
+
+
+h2 {
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: normal;
+	letter-spacing: 5px;
+
+}
+
+h3:hover {
+	/* Show pointer and underline*/
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+h3 + * {
+	/* Any element after h3 is hidden*/
+	display: none;
+}
+
+h3,
+p {
+	/* This sorts jumpy end of Toggle side*/
+	margin-bottom: 0;
+}
+
+
+
+img {
+	display:block;
+	margin: 0 auto;
+	border: 5px solid white;
+	/* border: 10px dotted white; */
+	border-radius: 50%;
+	transition: transform 1s;
+
+}
+
+img:hover {
+	transform: rotate(360deg) scale(1.2);
+	/* Transition has beeen add above to show the movement */
+
+}
+
+
+p,
+ul,
+ol {
+	line-height: 1.5;
+	/* Gets rid of bullets & list numbers */
+	list-style: none;
+	/* gerts rid of default padding on lists */
+	padding-left: 0;
+
+}
+
+
+
+a {
+	font-weight: bold;
+	color: magenta;
+	text-decoration: none;
+	/* formats links */
+
+
+}
+
+
+a:hover {
+	/* change when mouse hovers over links */
+	text-decoration: underline;
+	color: pink;
+	
+}
+
+
+a:visited {
+		/* Changes link cover after visit */
+		color: red;
+
+}
